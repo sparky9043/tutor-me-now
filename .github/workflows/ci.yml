@@ -25,3 +25,6 @@ jobs:
       - name: Install dependencies (Backend)
         run: npm install
         working-directory: server
+      - name: Check Styles (Backend)
+        run: npm run lint
+        working-directory: server
