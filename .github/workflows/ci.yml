@@ -1,0 +1,14 @@
+name: Deployment Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: |
+          echo "Hello world!"
