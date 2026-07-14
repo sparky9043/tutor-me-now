@@ -7,10 +7,8 @@ const api = supertest(app);
 
 void describe('Generic test statement', () => {
   void test('True is equal to true', async () => {
-    const response = await api
+    await api
       .get('/ping')
       .expect(200);
-    
-    console.log(response.body);
   });
 });
