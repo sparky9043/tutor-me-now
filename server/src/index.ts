@@ -1,5 +1,6 @@
 import app from "./app.ts";
+import config from "./utils/config.ts";
 
-app.listen(3000, () => {
-  console.log('Server running on port 3000');
+app.listen(config.PORT, () => {
+  console.log(`Server running on port ${config.PORT}`);
 });
